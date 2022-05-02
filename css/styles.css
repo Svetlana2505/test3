@@ -205,7 +205,7 @@ a {
   margin-right: 30px;
 }
 
-.feature-list .item:nth-child(4){
+.feature-list .item:nth-child(4) {
   margin-right: 0;
 }
 
@@ -215,10 +215,122 @@ a {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--primary-text-color);
+  margin-bottom: 10px;
 }
 
 .feature-list .text {
   font-size: 14px;
   line-height: 1.71;
   color: var(--title-text-color);
+}
+
+.feature-img {
+  height: 120px;
+  background: #f5f4fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* Чем мы занимаемся */
+
+.caption {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: var(--primary-text-color);
+  margin-bottom: 50px;
+}
+
+.work-box .list {
+  display: flex;
+}
+
+.work-box .item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+}
+
+.work-box .item:last-child {
+  margin-right: 0;
+}
+
+/* Наша команда  */
+
+.team-container .team-list {
+  display: flex;
+}
+
+.team-list .team-item {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-list .team-item:last-child {
+  margin-right: 0;
+}
+
+.team-subtitle {
+  padding: 30px 32px;
+}
+
+.team-subtitle .subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  color: var(--primary-text-color);
+  margin-bottom: 10px;
+}
+
+.team-subtitle .subtext {
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--title-text-color);
+  text-align: center;
+  margin-bottom: 16px;
+}
+.team-subtitle-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-subtitle-list .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-subtitle-item .links {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+  transition: background 250ms ease,
+  fill 250ms ease;
+}
+
+.team-subtitle-item:hover .links,
+.team-subtitle-item:focus .links {
+  background-color: var(--accent-color);
+  fill: var(--color-white);
+}
+
+/* Постоянные клиенты */
+
+.clients-list {
+  display: flex;
+}
+
+.clients-list .item {
+  width: calc((100% - 150px) / 6);
+  margin-right: 30px;
 }
